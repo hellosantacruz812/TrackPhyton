@@ -3,7 +3,7 @@ def count_letters(text):
     text = text.lower()
     counts ={}
     for char in text:
-        if 'a' <= char <= 'я':
+        if char.isalpha():
             counts[char] = counts.get(char, 0) + 1
     return counts
 
